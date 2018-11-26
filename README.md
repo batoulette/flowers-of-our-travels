@@ -1,1 +1,1 @@
-# flowers-of-our-travels
+# flowers-of-our-travels by Team Stripes
