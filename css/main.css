@@ -1,6 +1,25 @@
 
 
 
-  img {
-    max-width: 100%;
-  }
+
+
+.imagecontainer {
+  position: relative;
+  height:800px;
+  background-image: url("../images/bloom-blooming-blossom.jpg");
+  background-size: cover;
+}
+
+#bootstrap-overrides .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+#bootstrap-overrides h1 {
+  margin: 0;
+}
+
+h1.mainpageheader {
+  text-align: center;
+  top: 350px;
+}
