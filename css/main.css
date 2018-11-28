@@ -1,37 +1,42 @@
-#bootstrap-overrides .container-fluid {
+#index-bootstrap-override .container-fluid {
     margin: 0;
     padding: 0;
     border: none;
 }
-#bootstrap-overrides .imagecontainer {
+#index-bootstrap-override .imagecontainer {
   width: 100%;
   height:100vh;
-  background-image: url("../images/bloom-blooming-blossom.jpg");
+  background-image: url("../images/bloom-blooming-blossom.jpg") ;
   background-size: cover;
   position: static;
 }
 
-#bootstrap-overrides header {
+#index-bootstrap-override header {
   display: block;
   width: 100%;
   padding: 25px;
+  padding-bottom: 25px;
   z-index: 10;
   text-align: center;
-  position: absolute;
+  position: fixed;
+  margin: 0 auto;
 }
 
-#bootstrap-overrides h1 {
+#index-bootstrap-override div.container-fluid header.whiteBG {
+  background: white;
+}
+
+#index-bootstrap-override h1 {
   margin: 0;
   font-family: 'League Script', cursive;
   font-weight: 900;
   font-size: 40px;
   color: black;
-  position: absolute;
   padding: 0;
   left: 20%;
-
 }
-#bootstrap-overrides nav.navbar {
+
+#index-bootstrap-override nav.navbar {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -42,11 +47,11 @@
   letter-spacing: 0.1em;
 }
 
-#bootstrap-overrides nav i{
+#index-bootstrap-override nav i{
   padding: 10px 0;
   margin: 0 10px;
 }
-#bootstrap-overrides nav i a {
+#index-bootstrap-override nav i a {
   font-style: normal;
   color: black;
   text-decoration: none;
@@ -56,11 +61,11 @@
   font-weight: 900;
   border-bottom: solid black 1px;
 }
- #bootstrap-overrides a:hover {
+ #index-bootstrap-override a:hover {
    color: rgba(203, 228, 247, 1);
  }
 
-#bootstrap-overrides .about {
+#index-bootstrap-override .about {
   max-width: 60vw;;
   position: relative;
   top: 15%;
@@ -76,11 +81,11 @@ p {
   line-height: 1.5;
 }
 
-#bootstrap-overrides footer {
+#index-bootstrap-override footer {
   margin:0;
   width: 100%;
   right: 0;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   bottom: 0;
   padding: 10px;
@@ -88,28 +93,98 @@ p {
   text-align: center;
 }
 
-#bootstrap-overrides footer .inline {
+#index-bootstrap-override footer .inline {
   display: inline;
   padding: 0;
 }
-#bootstrap-overrides footer p {
+#index-bootstrap-override footer p {
   padding: 0;
   margin: 0;
 }
-#bootstrap-overrides footer nav {
+#index-bootstrap-override footer nav {
   margin: 0;
   padding: 0;
   bottom: 10px;
   display: inline;
 }
 
-
-#bootstrap-overrides.fab {
-
+#index-bootstrap-override.fab {
   font-size: 24px;
   padding: 0;
   display: inline;
 }
-#bootstrap-overrides .flowerImage img {
-  width: 50%;
+
+/* Flower page specific CSS*/
+#index-bootstrap-override .flowersContainer {
+  position: relative;
+  top: 70px;
+  size: 95%;
+  padding: -10px;
+
+}
+
+#index-bootstrap-override .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: rgba(233, 168, 189, 0.7);
+}
+
+#index-bootstrap-override .flowerImageContainer:hover .overlay {
+  opacity: 1;
+  padding-left: -10px;
+  padding-right: -10px;
+}
+
+#index-bootstrap-override .img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#index-bootstrap-override .text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: white;
+  width: 200px;
+}
+
+#index-bootstrap-override .flowerImageContainer a {
+  font-style: normal;
+  color: rgba(233, 168, 189, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  }
+
+@media (min-width: 900px) {
+  #index-bootstrap-override div header div div h1.mainpageheader{
+    display: block;
+  }
+  #index-bootstrap-override header nav {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  #index-bootstrap-override div header div div h1{
+    display: block;
+    font-size: 20px;
+  }
+
+  #index-bootstrap-override header nav {
+    display: block;
+  }
 }
