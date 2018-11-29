@@ -60,7 +60,11 @@
 .currentLink {
   font-weight: 900;
   border-bottom: solid black 1px;
+  transition: 300ms ease-out;
 }
+
+}
+
  #index-bootstrap-override a:hover {
    color: rgba(203, 228, 247, 1);
  }
@@ -92,6 +96,17 @@ p {
   background-color: rgba(203, 228, 247, .75);
   text-align: center;
 }
+#index-bootstrap-override  #fixedFooter footer.row {
+  margin:0;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: white;
+  text-align: center;
+  position: relative;
+}
+
 
 #index-bootstrap-override footer .inline {
   display: inline;
@@ -133,13 +148,11 @@ p {
   width: 100%;
   opacity: 0;
   transition: .4s ease;
-  background-color: rgba(233, 168, 189, 0.7);
+  background-color: rgba(255,255,255,0.6);
 }
 
 #index-bootstrap-override .flowerImageContainer:hover .overlay {
   opacity: 1;
-  padding-left: -10px;
-  padding-right: -10px;
 }
 
 #index-bootstrap-override .img {
@@ -157,17 +170,17 @@ p {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  background: white;
   width: 200px;
+  padding: 40px;
 }
 
 #index-bootstrap-override .flowerImageContainer a {
   font-style: normal;
-  color: rgba(233, 168, 189, 1);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 900;
-  }
+  font-weight: 400;
+
 
 @media (min-width: 900px) {
   #index-bootstrap-override div header div div h1.mainpageheader{
