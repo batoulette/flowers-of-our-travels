@@ -1,9 +1,9 @@
-#index-bootstrap-override .container-fluid {
+#bootstrap-override .container-fluid {
     margin: 0;
     padding: 0;
     border: none;
 }
-#index-bootstrap-override .imagecontainer {
+#bootstrap-override .imagecontainer {
   width: 100%;
   height:100vh;
   background-image: url("../images/bloom-blooming-blossom.jpg") ;
@@ -11,7 +11,7 @@
   position: static;
 }
 
-#index-bootstrap-override header {
+#bootstrap-override header {
   display: block;
   width: 100%;
   padding: 25px;
@@ -22,15 +22,15 @@
   margin: 0 auto;
 }
 
-#index-bootstrap-override div.container-fluid header {
+#bootstrap-override div.container-fluid header {
   background: rgb(241, 241, 241);
 }
 
-#index-bootstrap-override.index-page div.container-fluid header {
+#bootstrap-override.index-page div.container-fluid header {
   background: none;
 }
 
-#index-bootstrap-override h1 {
+#bootstrap-override h1 {
   margin: 0;
   font-family: 'League Script', cursive;
   font-weight: 900;
@@ -40,7 +40,7 @@
   left: 20%;
 }
 
-#index-bootstrap-override nav.navbar {
+#bootstrap-override nav.navbar {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -51,11 +51,11 @@
   letter-spacing: 0.1em;
 }
 
-#index-bootstrap-override nav i{
+#bootstrap-override nav i{
   padding: 10px 0;
   margin: 0 10px;
 }
-#index-bootstrap-override nav i a {
+#bootstrap-override nav i a {
   font-style: normal;
   color: black;
   text-decoration: none;
@@ -69,11 +69,11 @@
 
 }
 
- #index-bootstrap-override a:hover {
+ #bootstrap-override a:hover {
    color: rgba(203, 228, 247, 1);
  }
 
-#index-bootstrap-override .about {
+#bootstrap-override .about {
   max-width: 60vw;;
   position: relative;
   top: 15%;
@@ -89,7 +89,7 @@ p {
   line-height: 1.5;
 }
 
-#index-bootstrap-override footer {
+#bootstrap-override footer {
   margin:0;
   width: 100%;
   right: 0;
@@ -100,7 +100,7 @@ p {
   background-color: rgba(203, 228, 247, .75);
   text-align: center;
 }
-#index-bootstrap-override  #fixedFooter footer.row {
+#bootstrap-override  #fixedFooter footer.row {
   margin:0;
   width: 100%;
   right: 0;
@@ -112,29 +112,29 @@ p {
 }
 
 
-#index-bootstrap-override footer .inline {
+#bootstrap-override footer .inline {
   display: inline;
   padding: 0;
 }
-#index-bootstrap-override footer p {
+#bootstrap-override footer p {
   padding: 0;
   margin: 0;
 }
-#index-bootstrap-override footer nav {
+#bootstrap-override footer nav {
   margin: 0;
   padding: 0;
   bottom: 10px;
   display: inline;
 }
 
-#index-bootstrap-override.fab {
+#bootstrap-override.fab {
   font-size: 24px;
   padding: 0;
   display: inline;
 }
 
 /* Flower page specific CSS*/
-#index-bootstrap-override .flowers-container {
+#bootstrap-override .flowers-container {
   position: relative;
   top: 100px;
   size: 95%;
@@ -142,13 +142,13 @@ p {
 
 }
 
-#index-bootstrap-override .flowers-container .row {
+#bootstrap-override .flowers-container .row {
 
   padding: 10px;
 
 }
 
-#index-bootstrap-override .overlay {
+#bootstrap-override .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -161,17 +161,17 @@ p {
   background-color: rgba(255,255,255,0.6);
 }
 
-#index-bootstrap-override .col-sm-4:hover .overlay {
+#bootstrap-override .col-sm-4:hover .overlay {
   opacity: 1;
 }
 
-#index-bootstrap-override .col-sm-4 img {
+#bootstrap-override .col-sm-4 img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-#index-bootstrap-override .col-sm-4 .text {
+#bootstrap-override .col-sm-4 .text {
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -184,7 +184,7 @@ p {
   padding: 40px;
 }
 
-#index-bootstrap-override .col-sm-4 a {
+#bootstrap-override .col-sm-4 a {
   font-style: normal;
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -195,7 +195,7 @@ p {
 
 /* individual flower page */
 
-#index-bootstrap-override.individual-flower-page div.container{
+#bootstrap-override.individual-flower-page div.container{
   position: relative;
   size: 95%;
   top: 100px;
@@ -203,21 +203,21 @@ p {
 }
 
 
-#index-bootstrap-override.individual-flower-page div.container .information h2 {
+#bootstrap-override.individual-flower-page div.container .information h2 {
   margin: 20px 0;
   display: inline;
 }
 
 
 
-#index-bootstrap-override.individual-flower-page div.container .information h2,
-#index-bootstrap-override.individual-flower-page div.container .information h3{
+#bootstrap-override.individual-flower-page div.container .information h2,
+#bootstrap-override.individual-flower-page div.container .information h3{
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
 }
 
 
-#index-bootstrap-override.individual-flower-page div.container .information span {
+#bootstrap-override.individual-flower-page div.container .information span {
   padding: 0 5px;
   font-size: 20px;
   font-style: italic;
@@ -226,45 +226,58 @@ p {
 
 /*Contribute page*/
 
-#index-bootstrap-override.contribute-page .container {
+#bootstrap-override.contribute-page .container {
   position: relative;
   top: 100px;
 }
 
-#index-bootstrap-override.contribute-page .container h2{
+#bootstrap-override.contribute-page .container h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  padding: 10px;
+}
+
+#bootstrap-override.contribute-page  .container .row {
+  padding: 6px;
+}
+
+
+#bootstrap-override.contribute-page .container label {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  font-weight: 800;
-  padding: 10px;
-  text-align: center;
+  font-weight: 500;
 }
 
-#index-bootstrap-override.contribute-page .container div.form-group {
-  padding-top: 10px;
+#bootstrap-override.contribute-page .container [placeholder] {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
 }
+
+
 
 @media (min-width: 900px) {
-  #index-bootstrap-override div header div div h1.mainpageheader{
+  #bootstrap-override div header div div h1.mainpageheader{
     display: block;
   }
-  #index-bootstrap-override header nav {
+  #bootstrap-override header nav {
     display: block;
   }
 }
-#index-bootstrap-override div.#form-container.container {
+#bootstrap-override div.#form-container.container {
   display: block;
   width: 100%;
   position: relative;
   top: 100px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 375px) {
-  #index-bootstrap-override div header div div h1{
+  #bootstrap-override div header div div h1{
     display: block;
     font-size: 20px;
   }
 
-  #index-bootstrap-override header nav {
+  #bootstrap-override header nav {
     display: block;
   }
 }
