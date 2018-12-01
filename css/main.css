@@ -187,17 +187,21 @@ p {
 
 #index-bootstrap-override.individual-flower-page div.container{
   position: relative;
-  top: 70px;
   size: 95%;
-  padding: 0px;
   top: 100px;
+  padding-top: 20px;
 }
 
-#index-bootstrap-override.individual-flower-page div.container .information h2{
-  padding: 0 0 20px 0;
-  margin: 0;
+
+#index-bootstrap-override.individual-flower-page div.container .information h2 {
+  margin: 20px 0;
   display: inline;
-  letter-spacing: 1.5;
+}
+
+
+#index-bootstrap-override.cherry-blossoms-page div.container .col-sm-6.information {
+  padding-top: 10px;
+  background: rgb(251, 241, 249);
 }
 
 #index-bootstrap-override.individual-flower-page div.container .information h2,
@@ -214,6 +218,25 @@ p {
   font-style: italic;
 }
 
+
+/*Contribute page*/
+
+#index-bootstrap-override.contribute-page .container {
+  position: relative;
+  top: 100px;
+}
+
+#index-bootstrap-override.contribute-page .container h2{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 10px;
+  text-align: center;
+}
+
+#index-bootstrap-override.contribute-page .container div.form-group {
+  padding-top: 10px;
+}
 
 @media (min-width: 900px) {
   #index-bootstrap-override div header div div h1.mainpageheader{
