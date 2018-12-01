@@ -22,8 +22,12 @@
   margin: 0 auto;
 }
 
-#index-bootstrap-override div.container-fluid header.whiteBG {
-  background: white;
+#index-bootstrap-override div.container-fluid header {
+  background: rgb(241, 241, 241);
+}
+
+#index-bootstrap-override.index-page div.container-fluid header {
+  background: none;
 }
 
 #index-bootstrap-override h1 {
@@ -130,11 +134,17 @@ p {
 }
 
 /* Flower page specific CSS*/
-#index-bootstrap-override .flowersContainer {
+#index-bootstrap-override .flowers-container {
   position: relative;
-  top: 70px;
+  top: 100px;
   size: 95%;
-  padding: -10px;
+  padding: 10px;
+
+}
+
+#index-bootstrap-override .flowers-container .row {
+
+  padding: 10px;
 
 }
 
@@ -199,15 +209,10 @@ p {
 }
 
 
-#index-bootstrap-override.cherry-blossoms-page div.container .col-sm-6.information {
-  padding-top: 10px;
-  background: rgb(251, 241, 249);
-}
 
 #index-bootstrap-override.individual-flower-page div.container .information h2,
 #index-bootstrap-override.individual-flower-page div.container .information h3{
   font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
   font-weight: 800;
 }
 
