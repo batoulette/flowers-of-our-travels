@@ -27,11 +27,11 @@
 
 
 
-  <body id="index-bootstrap-override">
+  <body id="index-bootstrap-override" class="contribute-page">
 
 
     <div class="container-fluid">
-      <header class>
+      <header>
 
           <div class="col-sm-6 center-text center-block">
             <h1 class="mainpageheader"> Flowers of our Travels</h1>
@@ -50,30 +50,67 @@
     <div class="container" id="form-container">
     <h2>Contribute a flower</h2>
     <form class="contribute-form" action="/action_page.php">
+
       <div class="form-group">
-        <label class="control-label col-sm-2" for="email">Email:</label>
+        <label class="control-label col-sm-2" for="">Name of flower</label>
         <div class="col-sm-10">
-          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          <input type="text" class="form-control" id="name" placeholder="Enter name">
         </div>
       </div>
+
       <div class="form-group">
-        <label class="control-label col-sm-2" for="pwd">Password:</label>
+        <label class="control-label col-sm-2" for="">Scientific name</label>
         <div class="col-sm-10">
-          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          <input type="text" class="form-control" id="scientific-name" placeholder="Enter scientific name">
         </div>
       </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Its uses</label>
+        <div class="col-sm-10">
+          <textarea type="text" class="form-control" id="uses" placeholder="Enter a few uses of the flower" name="email"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="native-to">Native to</label>
+        <div class="col-sm-10">
+          <textarea type="email" class="form-control" id="native-to" placeholder="Name a few places that this flower is native to"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="uses" placeholder="Enter your email" name="email">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Select images</label>
+        <div class="col-sm-10">
+          <input type="file" class="form-control" id="" placeholder="Enter your email" name="email">
+        </div>
+      </div>
+
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <div class="checkbox">
-            <label><input type="checkbox" name="remember"> Remember me</label>
+            <label><input type="checkbox" name="remember">I confirm that all the images belong to me</label>
           </div>
         </div>
       </div>
+
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <button type="submit" class="btn btn-default">Submit</button>
         </div>
       </div>
+
+
+
+
     </form>
   </div>
 

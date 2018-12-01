@@ -22,8 +22,12 @@
   margin: 0 auto;
 }
 
-#index-bootstrap-override div.container-fluid header.whiteBG {
-  background: white;
+#index-bootstrap-override div.container-fluid header {
+  background: rgb(241, 241, 241);
+}
+
+#index-bootstrap-override.index-page div.container-fluid header {
+  background: none;
 }
 
 #index-bootstrap-override h1 {
@@ -130,11 +134,17 @@ p {
 }
 
 /* Flower page specific CSS*/
-#index-bootstrap-override .flowersContainer {
+#index-bootstrap-override .flowers-container {
   position: relative;
-  top: 70px;
+  top: 100px;
   size: 95%;
-  padding: -10px;
+  padding: 10px;
+
+}
+
+#index-bootstrap-override .flowers-container .row {
+
+  padding: 10px;
 
 }
 
@@ -187,23 +197,22 @@ p {
 
 #index-bootstrap-override.individual-flower-page div.container{
   position: relative;
-  top: 70px;
   size: 95%;
-  padding: 0px;
   top: 100px;
+  padding-top: 20px;
 }
 
-#index-bootstrap-override.individual-flower-page div.container .information h2{
-  padding: 0 0 20px 0;
-  margin: 0;
+
+#index-bootstrap-override.individual-flower-page div.container .information h2 {
+  margin: 20px 0;
   display: inline;
-  letter-spacing: 1.5;
 }
+
+
 
 #index-bootstrap-override.individual-flower-page div.container .information h2,
 #index-bootstrap-override.individual-flower-page div.container .information h3{
   font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
   font-weight: 800;
 }
 
@@ -214,6 +223,25 @@ p {
   font-style: italic;
 }
 
+
+/*Contribute page*/
+
+#index-bootstrap-override.contribute-page .container {
+  position: relative;
+  top: 100px;
+}
+
+#index-bootstrap-override.contribute-page .container h2{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 10px;
+  text-align: center;
+}
+
+#index-bootstrap-override.contribute-page .container div.form-group {
+  padding-top: 10px;
+}
 
 @media (min-width: 900px) {
   #index-bootstrap-override div header div div h1.mainpageheader{
