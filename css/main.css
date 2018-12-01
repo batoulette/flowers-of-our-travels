@@ -233,15 +233,27 @@ p {
 
 #bootstrap-override.contribute-page .container h2{
   font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 600;
   padding: 10px;
-  text-align: center;
 }
 
-#bootstrap-override.contribute-page .container div.form-group {
-  padding-top: 10px;
+#bootstrap-override.contribute-page  .container .row {
+  padding: 6px;
 }
+
+
+#bootstrap-override.contribute-page .container label {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#bootstrap-override.contribute-page .container [placeholder] {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+
 
 @media (min-width: 900px) {
   #bootstrap-override div header div div h1.mainpageheader{
@@ -256,6 +268,7 @@ p {
   width: 100%;
   position: relative;
   top: 100px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 375px) {
