@@ -151,17 +151,17 @@ p {
   background-color: rgba(255,255,255,0.6);
 }
 
-#index-bootstrap-override .flowerImageContainer:hover .overlay {
+#index-bootstrap-override .col-sm-4:hover .overlay {
   opacity: 1;
 }
 
-#index-bootstrap-override .img {
+#index-bootstrap-override .col-sm-4 img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-#index-bootstrap-override .text {
+#index-bootstrap-override .col-sm-4 .text {
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -174,12 +174,45 @@ p {
   padding: 40px;
 }
 
-#index-bootstrap-override .flowerImageContainer a {
+#index-bootstrap-override .col-sm-4 a {
   font-style: normal;
   color: rgb(0, 0, 0);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
+
+}
+
+/* individual flower page */
+
+#index-bootstrap-override.individual-flower-page div.container{
+  position: relative;
+  top: 70px;
+  size: 95%;
+  padding: 0px;
+  top: 100px;
+}
+
+#index-bootstrap-override.individual-flower-page div.container .information h2{
+  padding: 0 0 20px 0;
+  margin: 0;
+  display: inline;
+  letter-spacing: 1.5;
+}
+
+#index-bootstrap-override.individual-flower-page div.container .information h2,
+#index-bootstrap-override.individual-flower-page div.container .information h3{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+#index-bootstrap-override.individual-flower-page div.container .information span {
+  padding: 0 5px;
+  font-size: 20px;
+  font-style: italic;
+}
 
 
 @media (min-width: 900px) {
@@ -189,6 +222,12 @@ p {
   #index-bootstrap-override header nav {
     display: block;
   }
+}
+#index-bootstrap-override div.#form-container.container {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 100px;
 }
 
 @media (max-width: 375px) {
