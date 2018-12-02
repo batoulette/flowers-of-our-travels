@@ -1,41 +1,12 @@
-#bootstrap-override .container-fluid {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
 
-#bootstrap-override .bg-image-container {
-  width: 100%;
-  height:100vh;
-  background-image: url("../images/bloom-blooming-blossom.jpg") ;
-  background-size: cover;
-}
-
+/*ALL PAGES--------------------------------------------------------------- */
 #bootstrap-override header {
   width: 100%;
   padding: 25px;
   z-index: 10;
   position: fixed;
   text-align: center;
-
-}
-
-
-#bootstrap-override.contribute-page header {
-  width: 100%;
-  padding: 25px;
-  z-index: 10;
-  position: fixed;
-  text-align: center;
-  left: 0;
-}
-
-
-#bootstrap-override.index-page div.container-fluid header {
-  background: none; /*header for the main page is transparent*/
-}
-#bootstrap-override.index-page header {
-  right:0;
+  background: rgb(241, 241, 241);
 }
 
 #bootstrap-override h1 {
@@ -71,15 +42,9 @@
   font-weight: 900;
 }
 
- #bootstrap-override a:hover {
-   font-weight: 900;
- }
-
-#bootstrap-override .about-us {
-  position: absolute;
-  top: 15%;
+#bootstrap-override a:hover {
+ font-weight: 900;
 }
-
 p {
   font-size: 17px;
   font-family: 'Raleway', sans-serif;
@@ -87,72 +52,74 @@ p {
   line-height: 1.5;
 }
 
+#bootstrap-override .about-us {
+  position: absolute;
+  top: 15%;
+  padding: 10px;
+}
+
 #bootstrap-override footer {
+  margin:0;
+  width: 100%;
+  bottom: 0;
+  padding: 10px 0;
+  background: white;
+  text-align: center;
+  position: relative;
+}
+
+#bootstrap-override footer .inline {
+  /* putting social media icons in line with text */
+  display: inline;
+  padding: 0;
+}
+
+#bootstrap-override.fab {
+  /* soial meadia icons */
+  font-size: 24px;
+  padding: 0;
+  display: inline;
+}
+/* index-page ----------------------------------------------------------------*/
+#bootstrap-override.index-page .container-fluid {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#bootstrap-override .bg-image-container {
+  width: 100%;
+  height:100vh;
+  background-image: url("../images/bloom-blooming-blossom.jpg") ;
+  background-size: cover;
+}
+
+#bootstrap-override.index-page div.container-fluid header {
+  /* transparent header */
+  background: none;
+}
+#bootstrap-override.index-page footer {
   margin:0;
   width: 100%;
   right: 0;
   position: fixed;
   z-index: 10;
   bottom: 0;
-  padding: 10px;
+  padding: 10px 0;
   background-color: rgba(203, 228, 247, .75);
   text-align: center;
 }
 
-
-#bootstrap-override.flowers-page footer.row {
-  margin:0;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  padding: 10px;
-  background: white;
-  text-align: center;
-  position: relative;
-}
-
-#bootstrap-override.flowers-page header {
-  right:15px;
-}
-
-
-#bootstrap-override footer .inline {
-  display: inline;
-  padding: 0;
-}
-#bootstrap-override footer p {
-  padding: 0;
-  margin: 0;
-}
-#bootstrap-override footer nav {
-  margin: 0;
-  padding: 0;
-  bottom: 10px;
-  display: inline;
-}
-
-#bootstrap-override.fab {
-  font-size: 24px;
-  padding: 0;
-  display: inline;
-}
-/* headers in flowers and contribute pages*/
-#bootstrap-override div.container-fluid header {
-  background: rgb(241, 241, 241);
-}
-
-/* Flower page specific CSS*/
+/* flowers-page ----------------------------------------------------------------*/
 #bootstrap-override .flowers-container {
   position: relative;
   top: 100px;
   size: 95%;
   padding: 10px;
-
 }
 
 #bootstrap-override .flowers-container .row {
   padding: 10px;
-
 }
 
 #bootstrap-override .overlay {
@@ -179,6 +146,7 @@ p {
 }
 
 #bootstrap-override .col-sm-4 .text {
+  /*text over images upon hover  */
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -197,41 +165,14 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
-
-}
-
-/* individual flower page */
-
-#bootstrap-override.individual-flower-page div.container{
-  position: relative;
-  size: 95%;
-  top: 100px;
-  padding-top: 20px;
-}
-
-
-#bootstrap-override.individual-flower-page div.container .information h2 {
-  margin: 20px 0;
-  display: inline;
 }
 
 
 
-#bootstrap-override.individual-flower-page div.container .information h2,
-#bootstrap-override.individual-flower-page div.container .information h3{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+/* contribute-page -------------------------------------------------------------*/
+#bootstrap-override.contribute-page header {
+  left: 0;
 }
-
-
-#bootstrap-override.individual-flower-page div.container .information span {
-  padding: 0 5px;
-  font-size: 20px;
-  font-style: italic;
-}
-
-
-/*contribute-page*/
 
 #bootstrap-override.contribute-page .container {
   position: relative;
@@ -247,8 +188,7 @@ p {
 #bootstrap-override.contribute-page  .container .row {
   padding: 6px;
 }
-
-
+/* form styles */
 #bootstrap-override.contribute-page .container label {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -260,34 +200,6 @@ p {
   font-weight: 200;
 }
 
-#bootstrap-override.contribute-page footer.row {
-  margin:0;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  padding: 10px;
-  background: white;
-  text-align: center;
-  position: relative;
-}
-
-
-@media (max-width: 768px) {
-  #bootstrap-override header h1{
-    display: block;
-    font-size: 20px;
-
-  }
-
-  #bootstrap-override header nav{
-    display: inline;
-    font-size: 10px;
-  }
-
-}
-
-
-
 #bootstrap-override div.#form-container.container {
   display: block;
   width: 100%;
@@ -296,13 +208,65 @@ p {
   padding-bottom: 0;
 }
 
+/* individual flower page ------------------------------------------------------*/
+
+#bootstrap-override.individual-flower-page div.container{
+  position: relative;
+  size: 95%;
+  top: 100px;
+  padding-top: 20px;
+}
+
+#bootstrap-override.individual-flower-page div.container .information h2 {
+  margin: 20px 0;
+  display: inline;
+}
+
+#bootstrap-override.individual-flower-page div.container .information h2,
+#bootstrap-override.individual-flower-page div.container .information h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+#bootstrap-override.individual-flower-page div.container .information span {
+  padding: 0 5px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* media queries ---------------------------------------------------------------*/
+@media (max-width: 768px) {
+  #bootstrap-override header{
+
+  }
+  #bootstrap-override header h1{
+    /* making header font small  */
+    display: block;
+    font-size: 20px;
+  }
+
+  #bootstrap-override header nav{
+    /* making nav elements font small  */
+    display: inline;
+    font-size: 10px;
+  }
+
+  #bootstrap-override.flowers-page .col-sm-4 {
+    /* added some padding so that flowers aren't right on
+    top of each other when the screen is small */
+    padding-top: 20px
+  }
+}
+
 @media (max-width: 375px) {
-  #bootstrap-override div header div div h1{
+  #bootstrap-override div header h1{
+    /* making header font small  */
     display: block;
     font-size: 20px;
   }
 
   #bootstrap-override header nav {
+    /* making nav elements font small  */
     display: block;
   }
 }
