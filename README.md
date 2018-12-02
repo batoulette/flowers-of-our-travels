@@ -1,1 +1,2 @@
-# flowers-of-our-travels by Team Stripes
+# Flowers of our Travels by Team Stripes
+# CF:G Introduction to Web Development
