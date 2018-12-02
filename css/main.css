@@ -17,7 +17,7 @@
   z-index: 10;
   position: fixed;
   text-align: center;
-  left: 15px;
+
 }
 
 
@@ -34,12 +34,15 @@
 #bootstrap-override.index-page div.container-fluid header {
   background: none; /*header for the main page is transparent*/
 }
+#bootstrap-override.index-page header {
+  right:0;
+}
 
 #bootstrap-override h1 {
   margin: 0;
   font-family: 'League Script', cursive;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   padding: 0;
 }
@@ -106,6 +109,10 @@ p {
   background: white;
   text-align: center;
   position: relative;
+}
+
+#bootstrap-override.flowers-page header {
+  right:15px;
 }
 
 
@@ -274,14 +281,6 @@ p {
 
   #bootstrap-override header nav{
     display: inline;
-    font-size: 10px;
-  }
-
-}
-
-
-  #bootstrap-override header .navbar{
-    display: block;
     font-size: 10px;
   }
 
